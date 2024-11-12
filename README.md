@@ -3,7 +3,7 @@ Proyecto realizado para la prueba de inditex
 
 Para acceder a la base de datos al levantar el programa acceder a http://localhost:8050/h2-console
 
-Los datos necesarios para ver la tabla son
+Los datos necesarios para ver la tabla son los siguientes:
 
 Driver class: org.h2.Driver
 
