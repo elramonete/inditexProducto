@@ -40,6 +40,6 @@ Las 5 pruebas que indicais que hay que realizar en la prueba estan implementadas
 Hemos añadido cada vez que realicemos un commit al repositorio GitHub,
 automaticamente realice un despliegue en Jenkins.
 
-Añado una captura de pantalla:
+Añado una captura de pantalla :
 ![img_2.png](img_2.png)
 
