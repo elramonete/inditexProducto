@@ -43,3 +43,5 @@ automaticamente realice un despliegue en Jenkins.
 Añado una captura de pantalla :
 ![img_2.png](img_2.png)
 
+Vemos que se despliega automáticamente nada más subir nuestro commit:
+![img_3.png](img_3.png)
