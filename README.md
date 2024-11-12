@@ -28,6 +28,10 @@ el corazon del aplicativo y donde se encuentra la clase PriceService y las inter
 la **infraestructura** que es donde he metido tanto los repositorios con acceso a bbdd incluidas las entidades como los controladores a traves de los cuales se conecta la applicacion con el exterior.
 Y el MapStruct, donde transformamos los DTO's a Entity's, y viceversa, pasando por el Dominio.
 
+Muestro una imagen como tenemos estructurado el proyecto:
+
+![img_1.png](img_1.png)
+
 En la parte de los tests tenemos test unitarios con mockito para los servicios y los adaptadores de los repositorios y he utilizado RestAssured para hacer una prueba 
 endToEnd de los controladores. 
 
