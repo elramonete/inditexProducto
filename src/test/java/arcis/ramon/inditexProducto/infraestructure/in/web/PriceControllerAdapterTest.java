@@ -37,7 +37,7 @@ class PriceControllerAdapterTest {
     @BeforeEach
     public void setup() {
         RestAssured.baseURI = "http://localhost";
-        RestAssured.port = 8010;
+        RestAssured.port = 8050;
     }
 
 
