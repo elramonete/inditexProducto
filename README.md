@@ -1,4 +1,4 @@
-# InditexProducto
+# Inditex Producto
 Proyecto realizado para la prueba de inditex
 
 Para acceder a la base de datos al levantar el programa acceder a http://localhost:8050/h2-console
@@ -41,7 +41,7 @@ endToEnd de los controladores.
 Las 5 pruebas que indicais que hay que realizar en la prueba estan implementadas en la clase **PriceControllerAdapterTest**.
 
 Hemos añadido cada vez que realicemos un commit al repositorio GitHub,
-automaticamente realice un despliegue en Jenkins.
+automaticamente realizará un despliegue en Jenkins.
 
 Añado una captura de pantalla :
 ![img_2.png](img_2.png)
@@ -49,5 +49,5 @@ Añado una captura de pantalla :
 Vemos que se despliega automáticamente nada más subir nuestro commit:
 ![img_3.png](img_3.png)
 
-Calidad del codigo con SonarLint:
+Hemos añadido la extension SonarLint, y revisaremos el codigo previamente antes de subir el codigo a github:
 ![img_5.png](img_5.png)
