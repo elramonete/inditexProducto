@@ -32,6 +32,9 @@ Muestro una imagen como tenemos estructurado el proyecto:
 
 ![img_4.png](img_4.png)
 
+IntelliJ Idea, modelo de Arquitectura Hexagonal:
+![img_6.png](img_6.png)
+
 En la parte de los tests tenemos test unitarios con mockito para los servicios y los adaptadores de los repositorios y he utilizado RestAssured para hacer una prueba 
 endToEnd de los controladores. 
 
