@@ -8,12 +8,12 @@
         <version>2.7.11</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>arcis.ramon</groupId>
-    <artifactId>inditexProducto</artifactId>
+    <groupId>com.inditex.arcis.ramon.producto</groupId>
+    <artifactId>producto</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>inditexProducto</name>
-    <description>inditexProducto</description>
+    <name>producto</name>
+    <description>producto</description>
     <properties>
         <java.version>11</java.version>
     </properties>
