@@ -37,5 +37,9 @@ endToEnd de los controladores.
 
 Las 5 pruebas que indicais que hay que realizar en la prueba estan implementadas en la clase **PriceControllerAdapterTest**.
 
+Hemos añadido cada vez que realicemos un commit al repositorio GitHub,
+automaticamente realice un despliegue en Jenkins.
 
+Añado una captura de pantalla:
+![img_2.png](img_2.png)
 
