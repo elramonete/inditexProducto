@@ -45,3 +45,6 @@ Añado una captura de pantalla :
 
 Vemos que se despliega automáticamente nada más subir nuestro commit:
 ![img_3.png](img_3.png)
+
+Calidad del codigo con SonarLint:
+![img_5.png](img_5.png)
