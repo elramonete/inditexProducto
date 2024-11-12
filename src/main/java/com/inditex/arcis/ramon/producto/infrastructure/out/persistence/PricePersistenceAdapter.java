@@ -3,7 +3,7 @@ package com.inditex.arcis.ramon.producto.infrastructure.out.persistence;
 import com.inditex.arcis.ramon.producto.application.port.in.PriceInDto;
 import com.inditex.arcis.ramon.producto.application.port.in.PriceOutDto;
 import com.inditex.arcis.ramon.producto.domain.exceptions.EntityNotFoundException;
-import com.inditex.arcis.ramon.producto.domain.model.Price;
+import com.inditex.arcis.ramon.producto.domain.model.PriceDomain;
 import com.inditex.arcis.ramon.producto.infrastructure.out.persistence.entities.PriceEntity;
 import org.springframework.stereotype.Component;
 import com.inditex.arcis.ramon.producto.application.port.out.GetPricePort;
@@ -46,7 +46,7 @@ public class PricePersistenceAdapter implements GetPricePort {
 
         String formattedPrice = new DecimalFormat("0.00#").format(priceEntity.getPrice())+" "+priceEntity.getCurrency();
 
-        List<Price> pricesDomain = priceGetMapper.toDtoIterable(pricesEntities);
+        List<PriceDomain> pricesDomain = priceGetMapper.toDtoIterable(pricesEntities);
 
         PriceOutDto priceOutDto = priceOutMapper.toDto(pricesDomain.get(0));
 

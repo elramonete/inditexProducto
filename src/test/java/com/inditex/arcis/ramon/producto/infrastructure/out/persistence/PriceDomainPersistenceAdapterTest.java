@@ -3,7 +3,7 @@ package com.inditex.arcis.ramon.producto.infrastructure.out.persistence;
 import com.inditex.arcis.ramon.producto.application.port.in.PriceInDto;
 import com.inditex.arcis.ramon.producto.application.port.in.PriceOutDto;
 import com.inditex.arcis.ramon.producto.domain.exceptions.EntityNotFoundException;
-import com.inditex.arcis.ramon.producto.domain.model.Price;
+import com.inditex.arcis.ramon.producto.domain.model.PriceDomain;
 import com.inditex.arcis.ramon.producto.infrastructure.out.persistence.entities.BrandEntity;
 import com.inditex.arcis.ramon.producto.infrastructure.out.persistence.entities.PriceEntity;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +21,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
-class PricePersistenceAdapterTest {
+class PriceDomainPersistenceAdapterTest {
 
     @Mock
     private PriceRepository repository;
@@ -87,15 +87,15 @@ class PricePersistenceAdapterTest {
                 1L, LocalDateTime.of(2023, 4, 15, 0, 0), LocalDateTime.of(2023, 4, 15, 0, 0), 35455L))
                 .thenReturn(expectedPrices);
 
-        // Convertimos las entidades a objetos de dominio (Price)
-        List<Price> pricesDomain = new ArrayList<>();
-        pricesDomain.add(Price.builder()
+        // Convertimos las entidades a objetos de dominio (PriceDomain)
+        List<PriceDomain> pricesDomain = new ArrayList<>();
+        pricesDomain.add(PriceDomain.builder()
                 .productId(35455L)
                 .price("25")
                 .startDate(LocalDateTime.of(2023, 4, 1, 0, 0))
                 .endDate(LocalDateTime.of(2023, 4, 30, 23, 59, 59))
                 .build());
-        pricesDomain.add(Price.builder()
+        pricesDomain.add(PriceDomain.builder()
                 .productId(35455L)
                 .price("35")
                 .startDate(LocalDateTime.of(2023, 5, 1, 0, 0))

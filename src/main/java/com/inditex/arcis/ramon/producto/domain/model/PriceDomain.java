@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Price {
+public class PriceDomain {
 
         private Long productId;
         private String brandName;

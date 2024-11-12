@@ -15,11 +15,10 @@ import com.inditex.arcis.ramon.producto.application.port.in.PriceOutDto;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class PriceServiceTest {
+class PriceDomainServiceTest {
     @Mock
     private GetPricePort port;
 

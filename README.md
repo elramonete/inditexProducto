@@ -30,7 +30,7 @@ Y el MapStruct, donde transformamos los DTO's a Entity's, y viceversa, pasando p
 
 Muestro una imagen como tenemos estructurado el proyecto:
 
-![img_1.png](img_1.png)
+![img_4.png](img_4.png)
 
 En la parte de los tests tenemos test unitarios con mockito para los servicios y los adaptadores de los repositorios y he utilizado RestAssured para hacer una prueba 
 endToEnd de los controladores. 

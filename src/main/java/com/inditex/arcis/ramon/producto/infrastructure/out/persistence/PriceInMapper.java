@@ -1,16 +1,16 @@
 package com.inditex.arcis.ramon.producto.infrastructure.out.persistence;
 
 import com.inditex.arcis.ramon.producto.application.port.in.PriceInDto;
-import com.inditex.arcis.ramon.producto.domain.model.Price;
+import com.inditex.arcis.ramon.producto.domain.model.PriceDomain;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public interface PriceInMapper extends GenericMapper<PriceInDto, Price>{
+public interface PriceInMapper extends GenericMapper<PriceInDto, PriceDomain>{
     @Override
-    Price toEntity(PriceInDto priceInDto);
+    PriceDomain toEntity(PriceInDto priceInDto);
 
     @Override
-    PriceInDto toDto(Price price);
+    PriceInDto toDto(PriceDomain priceDomain);
 
 
 }
