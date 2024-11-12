@@ -21,7 +21,7 @@ Teneis una interfaz swagger disponible para hacer las pruebas necesarias en http
 
 ![image](https://user-images.githubusercontent.com/7735554/233591202-9f26d139-71a0-4464-8977-c7bc8a31ed0b.png)
 
-En este proyecto se ha realizado con arquitectura hexagonal,
+El proyecto se ha realizado con arquitectura hexagonal,
 En esta arquitectura hay 3 partes diferenciadas, el **domain**, donde se encuentra
 el dominio de la **aplicacion**, luego la segunda es la **aplicacion**, que es   
 el corazon del aplicativo y donde se encuentra la clase PriceService y las interfaces (port) que a su vez, se comunican con la capa de la **infraestructura**, y por ultimo
