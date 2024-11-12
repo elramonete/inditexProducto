@@ -49,5 +49,5 @@ Añado una captura de pantalla :
 Vemos que se despliega automáticamente nada más subir nuestro commit:
 ![img_3.png](img_3.png)
 
-Hemos añadido la extension SonarLint, y revisaremos el codigo previamente antes de subir el codigo a github:
+Hemos incluido el plugin SonarLint, para la calidad del codigo:
 ![img_5.png](img_5.png)
