@@ -75,3 +75,6 @@ Vemos que se despliega automáticamente nada más subir nuestro commit:
 
 Hemos incluido el plugin SonarLint, para la calidad del codigo:
 ![img_5.png](img_5.png)
+
+Y SonarQube enlazamos el proyecto github con SonarCloud.io
+![img_7.png](img_7.png)
