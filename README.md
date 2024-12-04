@@ -17,7 +17,7 @@ En resumen, hemos creado una aplicación de alta calidad, escalables y mantenibl
 DDD nos proporciona un enfoque centrado en el dominio, 
 la arquitectura hexagonal aísla la lógica de negocio,
 API First asegura que la API sea la prioridad, OpenAPI define la API,
-y CI/CD automatiza el proceso de desarrollo.
+y CI/CD automatiza el proceso de desarrollo. 
 
 Hemos creado la capa de dominio (PriceDomain), para la buena práctica en DDD y arquitectura Hexagonal,
 ya que nos permite desacoplar la lógica de negocio de la persistencia.

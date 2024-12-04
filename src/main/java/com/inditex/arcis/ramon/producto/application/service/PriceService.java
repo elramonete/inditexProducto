@@ -1,6 +1,6 @@
 package com.inditex.arcis.ramon.producto.application.service;
 
-import com.inditex.arcis.ramon.producto.application.port.in.PriceInDto;
+import com.inditex.arcis.ramon.producto.domain.model.PriceRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import com.inditex.arcis.ramon.producto.application.port.out.GetPricePort;
@@ -13,8 +13,8 @@ public class PriceService implements PriceServicePort {
 
         private GetPricePort port;
 
-        public PriceOutDto getPrice(PriceInDto priceInDto) {
-            return port.getPrice(priceInDto);
+        public PriceOutDto getPrice(PriceRequest priceRequest) {
+            return port.getPrice(priceRequest);
         }
 
 }

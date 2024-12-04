@@ -1,11 +1,8 @@
 package com.inditex.arcis.ramon.producto.domain.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
-
 
 @Builder
 @NoArgsConstructor

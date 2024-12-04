@@ -1,9 +1,9 @@
 package com.inditex.arcis.ramon.producto.infrastructure.out.persistence;
 
-import com.inditex.arcis.ramon.producto.application.port.in.PriceInDto;
 import com.inditex.arcis.ramon.producto.application.port.in.PriceOutDto;
 import com.inditex.arcis.ramon.producto.domain.exceptions.EntityNotFoundException;
 import com.inditex.arcis.ramon.producto.domain.model.PriceDomain;
+import com.inditex.arcis.ramon.producto.domain.model.PriceRequest;
 import com.inditex.arcis.ramon.producto.infrastructure.out.persistence.entities.BrandEntity;
 import com.inditex.arcis.ramon.producto.infrastructure.out.persistence.entities.PriceEntity;
 import org.junit.jupiter.api.BeforeEach;
@@ -71,7 +71,7 @@ class PriceDomainPersistenceAdapterTest {
     @Test
     void testGetPriceWithExistingPrice() {
         // Datos de entrada
-        PriceInDto priceInDto = PriceInDto.builder()
+        PriceRequest priceRequest = PriceRequest.builder()
                 .brandId(1L)
                 .date(LocalDateTime.of(2023, 4, 15, 0, 0))
                 .productId(35455L)
@@ -117,7 +117,7 @@ class PriceDomainPersistenceAdapterTest {
         when(priceOutMapper.toDto(pricesDomain.get(0))).thenReturn(expectedPriceOutDto);
 
         // Llamada al metodo que estamos probando
-        PriceOutDto actualPriceOutDto = priceRepositoryAdapter.getPrice(priceInDto);
+        PriceOutDto actualPriceOutDto = priceRepositoryAdapter.getPrice(priceRequest);
 
         // Comparación entre el resultado esperado y el resultado real
         assertEquals(expectedPriceOutDto, actualPriceOutDto);
@@ -126,7 +126,7 @@ class PriceDomainPersistenceAdapterTest {
     @Test
     void testGetPriceWithNonExistingPrice() {
         // Datos de entrada
-        PriceInDto priceInDto = PriceInDto.builder()
+        PriceRequest priceRequest = PriceRequest.builder()
                 .brandId(1L)
                 .date(LocalDateTime.of(2023, 4, 15, 0, 0))
                 .productId(35455L)
@@ -139,7 +139,7 @@ class PriceDomainPersistenceAdapterTest {
 
         // Verificar que se lanza la excepción EntityNotFoundException
         EntityNotFoundException exception = assertThrows(EntityNotFoundException.class,
-                () -> priceRepositoryAdapter.getPrice(priceInDto));
+                () -> priceRepositoryAdapter.getPrice(priceRequest));
 
         // Verificar el mensaje de la excepción (opcional)
         String expectedMessage = "La entidad no se encuentra en base de datos, productId:35455 brandId:1 date:2023-04-15T00:00:00";

@@ -1,6 +1,7 @@
 package com.inditex.arcis.ramon.producto.application.service;
 
-import com.inditex.arcis.ramon.producto.application.port.in.PriceInDto;
+import com.inditex.arcis.ramon.producto.domain.model.PriceRequest;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -42,9 +43,9 @@ class PriceDomainServiceTest {
     }
 
     @Test
-     void testPriceService() {
-        PriceInDto priceInDto = PriceInDto.builder().brandId(1L).date(LocalDateTime.of(2023, 4, 15, 0, 0)).productId(1L).build();
-        when(port.getPrice(priceInDto)).thenReturn(price);
+    void testPriceService() {
+        PriceRequest priceRequest = PriceRequest.builder().brandId(1L).date(LocalDateTime.of(2023, 4, 15, 0, 0)).productId(1L).build();
+        when(port.getPrice(priceRequest)).thenReturn(price);
 
         PriceOutDto expectedPriceOutDto = PriceOutDto.builder()
                 .brandName(price.getBrandName())
@@ -55,7 +56,7 @@ class PriceDomainServiceTest {
                 .priceList(price.getPriceList())
                 .build();
 
-        PriceOutDto actualPriceOutDto = priceService.getPrice(priceInDto);
+        PriceOutDto actualPriceOutDto = priceService.getPrice(priceRequest);
 
         assertEquals(expectedPriceOutDto, actualPriceOutDto);
     }
